@@ -141,4 +141,7 @@ function unbindUi()
 
     $("#send-chat").unbind();
     $("#chat-input").unbind();
+
+    $("#nickname > input").unbind();
+    $("#nickname > a").unbind();
 }
