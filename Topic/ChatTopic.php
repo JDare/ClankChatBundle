@@ -52,6 +52,8 @@ class ChatTopic implements TopicHandlerInterface
      */
     public function onPublish(Conn $conn, $topic, $event, array $exclude, array $eligible)
     {
+        $event = htmlentities($event); // removing html/js
+
         $topic->broadcast(array("msg" => $event, "from" => $conn->ChatNickname));
     }
 }
