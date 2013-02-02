@@ -6,6 +6,10 @@
     {% stylesheets '@JDareClankChatBundle/Resources/public/css/bootstrap.min.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
+
+    <script type="text/javascript">
+        var _CLANK_URI = "ws://{{ clank_host }}:{{ clank_port }}";
+    </script>
 </head>
 <body>
     <div class='container'>

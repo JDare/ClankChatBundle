@@ -1,6 +1,6 @@
 (function($){
     $(function(){
-        var network = Clank.connect("ws://clanktest.local:8080");
+        var network = Clank.connect(_CLANK_URI);
 
         network.on("socket/connect", function(session){
             $("#connected").html("Connected");
