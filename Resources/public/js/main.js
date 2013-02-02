@@ -91,6 +91,7 @@ function joinChatRoom(session)
 function appendChat(from, msg)
 {
     $("#chat-pane").find("ul").append("<li>"+from+": " + msg + "</li>");
+    $("#chat-pane").scrollTop($('#chat-pane').get(0).scrollHeight);
 }
 
 
