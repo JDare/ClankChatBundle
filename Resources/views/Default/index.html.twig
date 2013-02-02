@@ -1,0 +1,20 @@
+{% extends "JDareClankChatBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class='row'>
+        <div class='span12'>
+            <h2 id="chat-title">Try Clank Chat now, Join a room above!</h2>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='span12' id="chat-pane" style='height:320px; border: 1px solid #ccc;'>
+            <ul class='unstyled'>
+                <li>Join a chat room to start chatting!</li>
+            </ul>
+        </div>
+    </div>
+    <div class='row' style='margin-top: 10px;'>
+        <div class='span12'><input type="text" id="chat-input" style='width: 867px;margin:0;' /><a href="#" class='btn btn-primary' id="send-chat" style='margin:0;'>Send</a></div>
+    </div>
+{% endblock %}
